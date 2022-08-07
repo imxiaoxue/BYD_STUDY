@@ -49,3 +49,7 @@ form |表单 |action：指定表单数据的处理页面<br>method：GET/POST<br
 <aside></aside>
 <section></section>
 ```
+## task1_internship完成个人简历
+### code files: [internship.html](task1_internship/internship.html), [internship.css](task1_internship/internship.css)
+### 成果展示：[个人简历.pdf](task1_internship/个人简历.pdf)
+将写好的个人简历html文件打印成pdf
