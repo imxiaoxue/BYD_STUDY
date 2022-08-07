@@ -1,0 +1,23 @@
+.page{
+    width: 1024px;
+    min-height: 1440px;
+}
+table{
+    width: 1024px;
+}
+h1{
+    color: rgb(62, 104, 125);
+    text-align: center;
+}
+h3{
+    color: #fff;
+    background-color: rgb(62, 104, 125) ;
+}
+.education .school{
+    font-weight: bold;
+    table-layout:fixed
+}
+.experience .experience{
+    font-weight: bold;
+    table-layout:fixed
+}
