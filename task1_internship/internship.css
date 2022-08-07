@@ -12,6 +12,11 @@ h1{
 h3{
     color: #fff;
     background-color: rgb(62, 104, 125) ;
+    /* 解决浏览器打印时，背景色不显示 */
+    -webkit-print-color-adjust:exact;
+    -moz-print-color-adjust:exact;
+    -ms-print-color-adjust:exact;
+    print-color-adjust:exact;
 }
 .education .school{
     font-weight: bold;
