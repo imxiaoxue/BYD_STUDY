@@ -158,8 +158,8 @@ animation-play-state | |paused（动画处于暂停状态）<br>running（动画
 #### 定位属性
 属性名 |含义 |可取值
 ---|---|---
-overflow |溢出 |visible：默认值，超出的内容会显示在元素框外<br>hidden：超出的内容隐藏<br>scroll有滚动条<br>auto内容超出就有滚动条，不超出就没有
-visibility |指定元素是否可见 |visibility:visible;元素可见<br>visibility:hidden;元素隐藏，但不释放所占的页面空间
+overflow |溢出 |visible：默认值，超出的内容会显示在元素框外<br>hidden：超出的内容隐藏<br>scroll：有滚动条<br>auto：内容超出就有滚动条，不超出就没有
+visibility |指定元素是否可见 |visibility:visible; 元素可见<br>visibility:hidden; 元素隐藏，但不释放所占的页面空间
 dispaly |元素的显示模式 |display:none;元素消失，释放所占的页面空间<br>block：如div，独立占一整行，可以指定width/height<br>inline：如span，可与其他元素同处一行，不能指定width/height<br>inline-block：如img，可与其他元素同处一行，但可以指定width/height<br>table/table-cell：可使用vertical-align属性，IE6不支持
 float |浮动 |none：默认值元素不浮动<br>left：元素向左浮动<br>right：元素向右浮动
 clear |清除浮动 |none<br>left：清除之前的元素由于向左浮动对自己造成的影响<br>right：清除之前的元素由于向右浮动对自己造成的影响
