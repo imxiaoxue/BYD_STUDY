@@ -136,9 +136,23 @@ vertical-align ||
 #### 列表属性
 属性名 |含义 |可取值
 ---|---|---
+list-style-type |列表前的提示符号 |none/disc/circle/square...
+list-style-image |使用图片来代替默认列表项提示符号 |
+list-style-position |列表项的标号处于li外部还是内部 |
+list-style |集合属性 |
+
 #### animation动画属性
 属性名 |含义 |可取值
 ---|---|---
+animation-name |动画的名称 |
+animation-duration |动画的持续时间 |
+nimation-timing-function |动画的播放速度函数 |linear/ease-in/ease-out/ease-in-out
+animation-delay |播放的延时时间 |
+animation-iteration-count |动画播放次数 |如3、10、infinite（循环播放）
+animation-direction |播放方向 |normal（第二次播放时从第一帧重新开始）<br> alternate（第偶数次播放时从最后一帧倒序播放）
+animation |集合属性<br>name duration timing-function delay count direction |
+animation-fill-mode | |backwards：动画尚未开始时即处于第一帧状态 <br> forwards：动画完后保持最后一帧状态 <br> both：上述二者的效果都要
+animation-play-state
 
 ### CSS布局属性
 #### 定位属性
