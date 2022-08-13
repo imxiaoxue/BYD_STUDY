@@ -109,6 +109,40 @@ border-image-repeat | |
 border-image |使用图片做边框 |source：url(xx.png)<br>width:边框宽/九宫格格宽<br>repeat：stretch/repeat/round
 
 #### font字体属性
+属性名 |含义 |可取值
+---|---|---
+font-family |字体系列 |
+font-size |字号 |px在老版IE中无法缩放<br>%<br>em
+font-weight |字体粗细，代替B标签 |thicker、thick、normal、bold、bolder、100~900
+font-style |字体样式，代替I标签 |normal、italic斜体、oblique斜体
+font-variant |字体变数/变化 |normal、samll-caps小写字母会转换为大写字母
+font |集合属性<br>style、variant、weight、size、family |font:2em 'Arial';
+
 #### 文本属性
+属性名 |含义 |可取值
+---|---|---
+color |文本颜色、前景色 |
+text-align |文本水平对齐方式，只对block元素有效 |left center right
+text-decoration |文本的修饰方式 |none 取消<a>的下划线 <br> underline <br> linet-hrough <br> overline
+text-indent |文本缩进 |em px
+text-shadow |文本阴影 |x y blur color
+line-height |定义行高 |em：定义多行内容的行间距 <br> px：定义行高与区块的高一样，实现单行文本的竖直居中
+text-overflow ||
+word-wrap ||
+word-break ||
+white-sapce ||
+vertical-align ||
+
 #### 列表属性
+属性名 |含义 |可取值
+---|---|---
 #### animation动画属性
+属性名 |含义 |可取值
+---|---|---
+
+### CSS布局属性
+#### 定位属性
+#### 表格属性
+#### box-sizing
+#### 多列属性
+#### flex弹性盒属性
