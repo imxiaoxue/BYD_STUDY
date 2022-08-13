@@ -127,9 +127,9 @@ text-decoration |文本的修饰方式 |none 取消<a>的下划线 <br> underlin
 text-indent |文本缩进 |em px
 text-shadow |文本阴影 |x y blur color
 line-height |定义行高 |em：定义多行内容的行间距 <br> px：定义行高与区块的高一样，实现单行文本的竖直居中
-text-overflow ||
-word-wrap ||
-word-break ||
+text-overflow |溢出的文本如何显示 |clip：剪断不可见的文本 <br> ellipsis：若有不可见的文本，显示为...
+word-wrap |单词包裹方式 |
+word-break |单词打断方式 |
 white-sapce ||
 vertical-align ||
 
