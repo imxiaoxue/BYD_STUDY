@@ -158,13 +158,14 @@ animation-play-state | |paused（动画处于暂停状态）<br>running（动画
 #### 定位属性
 属性名 |含义 |可取值
 ---|---|---
-overflow |溢出 |
+overflow |溢出 |visible：默认值，超出的内容会显示在元素框外<br>hidden：超出的内容隐藏<br>scroll有滚动条<br>auto内容超出就有滚动条，不超出就没有
 visibility |指定元素是否可见 |visibility:visible;元素可见<br>visibility:hidden;元素隐藏，但不释放所占的页面空间
 dispaly |元素的显示模式 |display:none;元素消失，释放所占的页面空间<br>block：如div，独立占一整行，可以指定width/height<br>inline：如span，可与其他元素同处一行，不能指定width/height<br>inline-block：如img，可与其他元素同处一行，但可以指定width/height<br>table/table-cell：可使用vertical-align属性，IE6不支持
 float |浮动 |none：默认值元素不浮动<br>left：元素向左浮动<br>right：元素向右浮动
+clear |清除浮动 |none<br>left：清除之前的元素由于向左浮动对自己造成的影响<br>right：清除之前的元素由于向右浮动对自己造成的影响
 position |定位 |static：默认值，就是流定位<br>relative：相对定位<br>absolute：绝对定位<br>fixed：固定定位<br>sticky：粘性定位
 cursor |鼠标指针形状 |pointer：小手<br>move：可移动指示<br>text：可在此处进行文本输入<br>crosshair：显示为十字
-clip ||
+clip |裁剪 |rect(top,right,bottom,left)
 
 #### 表格属性
 属性名 |含义 |可取值
@@ -175,8 +176,8 @@ border-spacing |表格单元格间距；用于TABLE，边框分隔时使用 |
 #### box-sizing
 属性名 |含义 |可取值
 ---|---|---
-content-box ||
-border-box ||
+content-box | |width=内容区
+border-box | |width=内容区+内边距+边框
 
 #### 多列属性
 属性名 |含义 |可取值
@@ -187,3 +188,18 @@ column-width |每列文本的宽度 |
 colunm-rule |集合属性 |width style color
 
 #### flex弹性盒属性
+#### 给父元素设置display:flex;
+属性名 |含义 |可取值
+---|---|---
+flex-direction |决定主轴的方向 |
+flex-wrap ||
+justify-content |横轴对齐方式 |
+align-items |纵轴对齐方式（单行）|
+align-content |纵轴对齐方式（多行）|
+flex-grow:n; |按比例分配剩余空间|
+flex-shrink:n; |按比例减少多出的空间|
+flex-basis | |
+flex:参数一，参数二，参数三； |集合属性 |
+order:n; |定义元素的排列顺序 |n为整数，数值越小越靠前，默认为0
+align-self |定义单个元素在纵轴方向的方式 |flex-start flex-end strech baseline center
+
