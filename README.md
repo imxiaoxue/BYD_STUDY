@@ -131,8 +131,7 @@ text-overflow |溢出的文本如何显示 |clip：剪断不可见的文本 <br>
 word-wrap |单词包裹方式 |
 word-break |单词打断方式 |
 white-sapce ||
-vertical-align ||用在td/th中或display：table-cell元素中：让当前元素中的文本在竖直方向上居中
-             <br>用在IMG/TEXTAREA等inline-block元素中：让当前元素同一行中的其它元素与自己的竖直方向上的对齐方式
+vertical-align ||用在td/th中或display：table-cell元素中：让当前元素中的文本在竖直方向上居中<br>用在IMG/TEXTAREA等inline-block元素中：让当前元素同一行中的其它元素与自己的竖直方向上的对齐方式
 
 #### 列表属性
 属性名 |含义 |可取值
