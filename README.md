@@ -131,7 +131,8 @@ text-overflow |溢出的文本如何显示 |clip：剪断不可见的文本 <br>
 word-wrap |单词包裹方式 |
 word-break |单词打断方式 |
 white-sapce ||
-vertical-align ||
+vertical-align ||用在td/th中或display：table-cell元素中：让当前元素中的文本在竖直方向上居中
+             <br>用在IMG/TEXTAREA等inline-block元素中：让当前元素同一行中的其它元素与自己的竖直方向上的对齐方式
 
 #### 列表属性
 属性名 |含义 |可取值
@@ -152,11 +153,36 @@ animation-iteration-count |动画播放次数 |如3、10、infinite（循环播�
 animation-direction |播放方向 |normal（第二次播放时从第一帧重新开始）<br> alternate（第偶数次播放时从最后一帧倒序播放）
 animation |集合属性<br>name duration timing-function delay count direction |
 animation-fill-mode | |backwards：动画尚未开始时即处于第一帧状态 <br> forwards：动画完后保持最后一帧状态 <br> both：上述二者的效果都要
-animation-play-state
+animation-play-state | |paused（动画处于暂停状态）<br>running（动画处于运行状态）
 
 ### CSS布局属性
 #### 定位属性
+属性名 |含义 |可取值
+---|---|---
+overflow |溢出 |
+visibility |指定元素是否可见 |visibility：visible；元素可见<br>visibility：hidden；元素隐藏，但不释放所占的页面空间<br>display：none；元素消失，释放所占的页面空间
+float |浮动 |
+position |定位 |
+cursor |鼠标指针形状 |pointer小手<br>move可移动指示<br>text可在此处进行文本输入<br>crosshair显示为十字
+clip ||
+
 #### 表格属性
+属性名 |含义 |可取值
+---|---|---
+border-collapse ||
+border-spacing ||
+
 #### box-sizing
+属性名 |含义 |可取值
+---|---|---
+content-box ||
+border-box ||
+
 #### 多列属性
+属性名 |含义 |可取值
+---|---|---
+column-count ||
+column-gap ||
+column-width ||
+
 #### flex弹性盒属性
