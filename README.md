@@ -131,7 +131,7 @@ text-overflow |溢出的文本如何显示 |clip：剪断不可见的文本 <br>
 word-wrap |单词包裹方式 |
 word-break |单词打断方式 |
 white-sapce ||
-vertical-align ||用在td/th中或display：table-cell元素中：让当前元素中的文本在竖直方向上居中<br>用在IMG/TEXTAREA等inline-block元素中：让当前元素同一行中的其它元素与自己的竖直方向上的对齐方式
+vertical-align ||用在td/th中或display:table-cell元素中：让当前元素中的文本在竖直方向上居中<br>用在IMG/TEXTAREA等inline-block元素中：让当前元素同一行中的其它元素与自己的竖直方向上的对齐方式
 
 #### 列表属性
 属性名 |含义 |可取值
@@ -159,17 +159,18 @@ animation-play-state | |paused（动画处于暂停状态）<br>running（动画
 属性名 |含义 |可取值
 ---|---|---
 overflow |溢出 |
-visibility |指定元素是否可见 |visibility：visible；元素可见<br>visibility：hidden；元素隐藏，但不释放所占的页面空间<br>display：none；元素消失，释放所占的页面空间
-float |浮动 |
-position |定位 |
-cursor |鼠标指针形状 |pointer小手<br>move可移动指示<br>text可在此处进行文本输入<br>crosshair显示为十字
+visibility |指定元素是否可见 |visibility:visible;元素可见<br>visibility:hidden;元素隐藏，但不释放所占的页面空间
+dispaly |元素的显示模式 |display:none;元素消失，释放所占的页面空间<br>block：如div，独立占一整行，可以指定width/height<br>inline：如span，可与其他元素同处一行，不能指定width/height<br>inline-block：如img，可与其他元素同处一行，但可以指定width/height<br>table/table-cell：可使用vertical-align属性，IE6不支持
+float |浮动 |none：默认值元素不浮动<br>left：元素向左浮动<br>right：元素向右浮动
+position |定位 |static：默认值，就是流定位<br>relative：相对定位<br>absolute：绝对定位<br>fixed：固定定位<br>sticky：粘性定位
+cursor |鼠标指针形状 |pointer：小手<br>move：可移动指示<br>text：可在此处进行文本输入<br>crosshair：显示为十字
 clip ||
 
 #### 表格属性
 属性名 |含义 |可取值
 ---|---|---
-border-collapse ||
-border-spacing ||
+border-collapse |表格边框合并/崩塌方式，用于TABLE |separate：分隔<br>collapse：崩塌
+border-spacing |表格单元格间距；用于TABLE，边框分隔时使用 |
 
 #### box-sizing
 属性名 |含义 |可取值
@@ -180,8 +181,9 @@ border-box ||
 #### 多列属性
 属性名 |含义 |可取值
 ---|---|---
-column-count ||
-column-gap ||
-column-width ||
+column-count |竖直方向上列的数量 |
+column-gap |内容列与列间距，每列文本的高度 |
+column-width |每列文本的宽度 |
+colunm-rule |集合属性 |width style color
 
 #### flex弹性盒属性
