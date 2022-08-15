@@ -201,3 +201,5 @@ flex:参数一，参数二，参数三； |集合属性 |
 order:n; |定义元素的排列顺序 |n为整数，数值越小越靠前，默认为0
 align-self |定义单个元素在纵轴方向的方式 |flex-start<br>flex-end<br>strech<br>baseline<br>center
 
+## JavaScript学习笔记
+#### JavaScript由三部分组成，ECMAScript：JavaScript语法，DOM：页面文档对象模型，BOM：浏览器对象模型。
