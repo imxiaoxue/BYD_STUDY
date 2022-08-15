@@ -191,15 +191,13 @@ colunm-rule |集合属性 |width style color
 #### 给父元素设置display:flex;
 属性名 |含义 |可取值
 ---|---|---
-flex-direction |决定主轴的方向 |
-flex-wrap ||
-justify-content |横轴对齐方式 |
-align-items |纵轴对齐方式（单行）|
-align-content |纵轴对齐方式（多行）|
-flex-grow:n; |按比例分配剩余空间|
-flex-shrink:n; |按比例减少多出的空间|
-flex-basis | |
+flex-direction |决定主轴的方向 |row 默认值，从左向右<br>row-reverse<br>column 纵向排列<br>column-reverse
+flex-wrap |指定弹性盒子的子元素换行方式 |nowrap 默认，弹性容器为单行<br>wrap 弹性容器为多行，弹性子项溢出部分会被放置到新行，子项内部会产生断行<br>wrap-reverse
+justify-content |横轴对齐方式 |flex-star 默认值，行头开始<br>flex-end 行尾开始<br>center 居中分布<br>space-between 平均分布<br>space-around 平均分布，两边留一半间隔空间
+align-items |纵轴对齐方式（单行）|flex-star<br>flex-end<br>center<br>baseline<br>stretch
+align-content |纵轴对齐方式（多行）<br>用于修改flex-wrap |stretch 默认，各行伸展占剩余空间<br>flex-start 各行向弹性容器起始堆叠<br>flex-end<br>center<br>space-between 各行在弹性容器中平均分布<br>space-around 两端留间隔，间隔大小是子元素之间间距的一半
+flex |指定弹性子元素如何分配空间 |flex-grow:n; 按比例分配剩余空间<br>flex-shrink:n; 按比例减少多出的空间<br>flex-basis 默认基准<br>auto 计算值为 1 1 auto<br>initial 计算值为 0 1 auto<br>none 计算值为 0 0 auto<br>inherit 从父元素继承
 flex:参数一，参数二，参数三； |集合属性 |
 order:n; |定义元素的排列顺序 |n为整数，数值越小越靠前，默认为0
-align-self |定义单个元素在纵轴方向的方式 |flex-start flex-end strech baseline center
+align-self |定义单个元素在纵轴方向的方式 |flex-start<br>flex-end<br>strech<br>baseline<br>center
 
