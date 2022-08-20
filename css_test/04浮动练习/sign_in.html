@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-bor{
+            position: relative;width: 200px;
+        }
+        .icon-user{
+            position: absolute;left: 0;z-index:5;
+            background-image: url("man.jpg"); /*引入图片图片*/
+            background-repeat: no-repeat; /*设置图片不重复*/
+            background-position: 0px 0px; /*图片显示的位置*/
+            width: 20px; /*设置图片显示的宽*/
+            height: 20px; /*图片显示的高*/
+        }
+        input{
+            width: 50%;
+            border:none;
+            border-radius: 0;
+            border-bottom:#8D8D8D 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-bor">
+        <i class="icon-user"></i>
+        <input type="text" name="username" placeholder="请输入用户名">
+    </div>
+</body>
+</html>
