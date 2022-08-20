@@ -1,4 +1,10 @@
 # BYD_STUDY
+### 目录
+[HTML学习笔记](#HTML) <br>
+[CSS学习笔记](#CSS) <br>
+[JS学习笔记](#JS) <br>
+
+<span id="HTML"></span>
 ## HTML学习笔记
 ***
 #### HTML文档的基本结构  
@@ -54,6 +60,7 @@ form |表单 |action：指定表单数据的处理页面<br>method：GET/POST<br
 ### 成果展示：[个人简历.pdf](task1_internship/个人简历.pdf)
 将写好的个人简历html文件打印成pdf
 
+<span id="CSS"></span>
 ## CSS学习笔记
 ***
 #### CSS Cascade Style Sheet级联样式表
@@ -201,5 +208,6 @@ flex:参数一，参数二，参数三； |集合属性 |
 order:n; |定义元素的排列顺序 |n为整数，数值越小越靠前，默认为0
 align-self |定义单个元素在纵轴方向的方式 |flex-start<br>flex-end<br>strech<br>baseline<br>center
 
+<span id="JS"></span>
 ## JavaScript学习笔记
 #### JavaScript由三部分组成，ECMAScript：JavaScript语法，DOM：页面文档对象模型，BOM：浏览器对象模型。
