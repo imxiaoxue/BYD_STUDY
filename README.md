@@ -211,3 +211,56 @@ align-self |定义单个元素在纵轴方向的方式 |flex-start<br>flex-end<b
 <span id="JS"></span>
 ## JavaScript学习笔记
 #### JavaScript由三部分组成，ECMAScript：JavaScript语法，DOM：页面文档对象模型，BOM：浏览器对象模型。
+在JavaScript的世界中，所有代码都是单线程执行的。<br>
+JS处理异步的方式：回调函数callback、promise、async/await!<br>
+与其他函数并行运行的函数称为异步（asynchronous），一个很好的例子是 JavaScript setTimeout()<br>
+#### callback
+回调 (callback) 是作为参数传递给另一个函数的函数<br>
+这种技术允许函数调用另一个函数<br>
+回调函数可以在另一个函数完成后运行<br>
+#### promise
+Promise 对象用于表示一个异步操作的最终完成（或失败）及其结果值。<br>
+描述：一个 Promise 对象代表一个在这个 promise 被创建出来时不一定已知值的代理。它让你能够把异步操作最终的成功返回值或者失败原因和相应的处理程序关联起来。这样使得异步方法可以像同步方法那样返回值：异步方法并不会立即返回最终的值，而是会返回一个 promise，以便在未来某个时候把值交给使用者。<br>
+一个 Promise 必然处于以下几种状态之一：<br>
+待定（pending）：初始状态，既没有被兑现，也没有被拒绝。<br>
+已兑现（fulfilled）：意味着操作成功完成。<br>
+已拒绝（rejected）：意味着操作失败。<br>
+
+Promise 语法：<br>
+```js
+let myPromise = new Promise(function(myResolve, myReject) {
+// "Producing Code"（可能需要一些时间）
+
+  myResolve(); // 成功时
+  myReject();  // 出错时
+});
+
+// "Consuming Code" （必须等待一个兑现的承诺）
+myPromise.then(
+  function(value) { /* 成功时的代码 */ },
+  function(error) { /* 出错时的代码 */ }
+);
+```
+Promise最大的好处是在异步执行的流程中，把执行代码和处理结果的代码清晰地分离了：<br>
+一个最简单的Promise例子：生成一个0-2之间的随机数，如果小于1，则等待一段时间后返回成功，否则返回失败：<br>
+```js
+function test(resolve, reject) {
+    var timeOut = Math.random() * 2;
+    log('set timeout to: ' + timeOut + ' seconds.');
+    setTimeout(function () {
+        if (timeOut < 1) {
+            log('call resolve()...');
+            resolve('200 OK');
+        }
+        else {
+            log('call reject()...');
+            reject('timeout in ' + timeOut + ' seconds.');
+        }
+    }, timeOut * 1000);
+}
+new Promise(test).then(function (result) {
+    console.log('成功：' + result);
+}).catch(function (reason) {
+    console.log('失败：' + reason);
+});
+```
