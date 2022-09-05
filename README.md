@@ -265,5 +265,5 @@ new Promise(test).then(function (result) {
 });
 ```
 
-Vue CLI 4.5以下，对应的是Vue2
+Vue CLI 4.5以下，对应的是Vue2<br>
 Vue CLI 4.5及以上，对应的是Vue3，当然，创建项目的时候可以选择Vue2
