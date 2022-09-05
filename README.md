@@ -264,3 +264,6 @@ new Promise(test).then(function (result) {
     console.log('失败：' + reason);
 });
 ```
+
+Vue CLI 4.5以下，对应的是Vue2
+Vue CLI 4.5及以上，对应的是Vue3，当然，创建项目的时候可以选择Vue2
